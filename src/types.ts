@@ -1,3 +1,5 @@
+export type AiProvider = "gemini" | "nvidia";
+
 export interface MeetingRecord {
   id: string;
   title: string;
@@ -7,6 +9,7 @@ export interface MeetingRecord {
   additionalInstructions: string;
   resultMarkdown: string;
   createdAt: string;
+  provider?: AiProvider;
 }
 
 export interface SampleTranscript {
